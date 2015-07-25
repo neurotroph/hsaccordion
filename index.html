@@ -8,6 +8,14 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/hsaccordion.css" media="screen">
+    <style>
+      .accordion-container {
+        background-color: #1EB555;
+        margin: 20px -100px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <section class="page-header">
@@ -20,17 +28,97 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="horizontal-stacked-accordion" class="anchor" href="#horizontal-stacked-accordion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontal Stacked Accordion</h1>
-
-<p>Lightweight CSS a horizontally stacked accordion HTML. Mainly built with HTML and CSS 3 transitions.</p>
-
-<p>jQuery only optional for auto-play.</p>
 
 <h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo &amp; Usage</h2>
 
-<a href="./demo/index.html" class="btn">View Demo</a>
+  <div class="accordion-container">
+    <ul class="hsaccordion">
+      <li class="hsa-tab" id="hsa-tab01">
+        <div class="hsa-tab-image" style="background-image: url('demo/img/tab-image-01.jpg');">
+          <a href="#">Slide 1</a>
+        </div>
+
+        <div class="hsa-tab-content">
+          <h2>Slide 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+      </li>
+
+      <li class="hsa-tab" id="hsa-tab02">
+        <div class="hsa-tab-image" style="background-image: url('demo/img/tab-image-02.jpg');">
+          <a href="#">Slide 2</a>
+        </div>
+
+        <div class="hsa-tab-content">
+          <h2>Slide 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </li>
+
+      <li class="hsa-tab" id="hsa-tab03">
+        <div class="hsa-tab-image" style="background-image: url('demo/img/tab-image-03.jpg');">
+          <a href="#">Slide 3</a>
+        </div>
+
+        <div class="hsa-tab-content">
+          <h2>Slide 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </li>
+
+      <li class="hsa-tab" id="hsa-tab04">
+        <div class="hsa-tab-image" style="background-image: url('demo/img/tab-image-04.jpg');">
+          <a href="#">Slide 4</a>
+        </div>
+
+        <div class="hsa-tab-content">
+          <h2>Slide 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </li>
+
+      <li class="hsa-tab" id="hsa-tab05">
+        <div class="hsa-tab-image" style="background-image: url('demo/img/tab-image-05.jpg');">
+          <a href="#">Slide 5</a>
+        </div>
+
+        <div class="hsa-tab-content">
+          <h2>Slide 5</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <a href="./demo/index.html">View Demo 2 with Autoplay</a>
+
 
 <h3>
 <a id="html" class="anchor" href="#html" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTML</h3>
@@ -56,12 +144,12 @@
 <p>To add the background images, set the <code>background-image</code> property for your elements, e.g.:</p>
 
 <div class="highlight highlight-HTML"><pre><span class="pl-s1">&lt;<span class="pl-ent">style</span>&gt;</span>
-<span class="pl-s1">    <span class="pl-e">#hsa-tab01</span> { <span class="pl-c1"><span class="pl-c1">background-image</span></span>: <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>./img/tab-01.jpeg<span class="pl-pds">'</span></span>); }</span>
+<span class="pl-s1">    <span class="pl-e">#hsa-tab01</span> { <span class="pl-c1"><span class="pl-c1">background-image</span></span>: <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>./demo/img/tab-01.jpeg<span class="pl-pds">'</span></span>); }</span>
 <span class="pl-s1">&lt;/<span class="pl-ent">style</span>&gt;</span></pre></div>
 
 <p>You can also use inline-styles:</p>
 
-<div class="highlight highlight-HTML"><pre>        &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>hsa-tab<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background-image: url('./img/tab-01.jpeg');<span class="pl-pds">"</span></span>&gt;</pre></div>
+<div class="highlight highlight-HTML"><pre>        &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>hsa-tab<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background-image: url('./demo/img/tab-01.jpeg');<span class="pl-pds">"</span></span>&gt;</pre></div>
 
 <h3>
 <a id="css--less" class="anchor" href="#css--less" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS / LESS</h3>
