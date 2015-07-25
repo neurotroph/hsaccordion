@@ -1,9 +1,11 @@
 # Horizontal Stacked Accordion
-Lightweight CSS a horizontally stacked accordion HTML. Mainly built with HTML and CSS 3 transitions. jQuery only optional for auto-play.
+Lightweight CSS a horizontally stacked accordion HTML. Mainly built with HTML and CSS 3 transitions.
+
+jQuery only optional for auto-play.
 
 ## Usage
 ### HTML
-The accordion is based on an <ul>-element. You have to use the pre-defined CSS-classes in order to have the accordion working:
+The accordion is based on an ```<ul>```-element. You have to use the pre-defined CSS-classes in order to have the accordion working:
 ```HTML
 <div class="container">
 	<ul class="hsaccordion">
