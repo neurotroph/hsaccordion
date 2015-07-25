@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HSAccordion Demo</title>
+
+	<link rel="stylesheet" media="all" href="./normalize.css" />
+	<link rel="stylesheet" media="all" href="../css/hsaccordion.css" />
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<style>
+		body {
+			background-color: #ffffff;
+		}
+
+		.container {
+			background-color: #1EB555;
+			margin: 100px auto;
+			text-align: center;
+		}
+
+		#hsa-tab01 .hsa-tab-image { background-image: url('img/tab-image-01.jpg'); }
+		#hsa-tab02 .hsa-tab-image { background-image: url('img/tab-image-02.jpg'); }
+		#hsa-tab03 .hsa-tab-image { background-image: url('img/tab-image-03.jpg'); }
+		#hsa-tab04 .hsa-tab-image { background-image: url('img/tab-image-04.jpg'); }
+		#hsa-tab05 .hsa-tab-image { background-image: url('img/tab-image-05.jpg'); }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<ul class="hsaccordion">
+			<li class="hsa-tab" id="hsa-tab01">
+				<div class="hsa-tab-image">
+					<a href="#">Slide 1</a>
+				</div>
+
+				<div class="hsa-tab-content">
+					<h2>Slide 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				</div>
+			</li>
+
+			<li class="hsa-tab" id="hsa-tab02">
+				<div class="hsa-tab-image">
+					<a href="#">Slide 2</a>
+				</div>
+
+				<div class="hsa-tab-content">
+					<h2>Slide 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</li>
+
+			<li class="hsa-tab" id="hsa-tab03">
+				<div class="hsa-tab-image">
+					<a href="#">Slide 3</a>
+				</div>
+
+				<div class="hsa-tab-content">
+					<h2>Slide 3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</li>
+
+			<li class="hsa-tab" id="hsa-tab04">
+				<div class="hsa-tab-image">
+					<a href="#">Slide 4</a>
+				</div>
+
+				<div class="hsa-tab-content">
+					<h2>Slide 4</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</li>
+
+			<li class="hsa-tab" id="hsa-tab05">
+				<div class="hsa-tab-image">
+					<a href="#">Slide 5</a>
+				</div>
+
+				<div class="hsa-tab-content">
+					<h2>Slide 5</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<script src="../js/jquery.hsaccordion.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.hsaccordion').hsAccordion();
+		});
+	</script>
+</body>
+</html>

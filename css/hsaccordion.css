@@ -1,0 +1,155 @@
+/*	Horizontal Stacked Accordion
+ *	Lightweight CSS a horizontally stacked accordion HTML. Mainly built with HTML and CSS 3 transitions.
+ *	
+ *	URL:		https://github.com/neurotroph/hsaccordion/
+ *	Version:	1.0 (2015-07-25)
+ *
+ *	Version History:
+ *		1.0		Initial release
+ *
+ *	Copyright (c) 2015 Christopher Harms (http://www.christopherharms.de)
+ *	Released under MIT License (see LICENSE file)
+ */
+/* ======== SETTINGS ========= */
+/* Height of the accordion */
+/* Width of the preview */
+/* Width of the image, when tab is active */
+/* Real width of the image file (see ReadMe) */
+/* Width of the content section of the tab */
+/* CSS3 transition definition */
+/* Definition for border around preview image */
+/* Background of tab */
+/* Switch for the use of desaturated preview images */
+/* ===== END OF SETTINGS ===== */
+/* Mixins */
+.greyscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+.reset-greyscale {
+  -webkit-filter: none;
+  filter: none;
+}
+/* Definitions */
+.hsaccordion {
+  display: block;
+  width: 100%;
+  list-style-position: none;
+  overflow: hidden;
+  height: 400px;
+  font-size: 0;
+  margin: 0 auto;
+}
+.hsaccordion,
+.hsaccordion *,
+.hsaccordion:after,
+.hsaccordion *:after,
+.hsaccordion:before,
+.hsaccordion *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hsa-tab {
+  display: inline-block;
+  width: 80px;
+  height: 100%;
+  background-color: #fafaf0;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  -webkit-transition: all 0.6s 0.1s ease-in-out;
+  -moz-transition: all 0.6s 0.1s ease-in-out;
+  -ms-transition: all 0.6s 0.1s ease-in-out;
+  -o-transition: all 0.6s 0.1s ease-in-out;
+  transition: all 0.6s 0.1s ease-in-out;
+}
+.hsa-tab:hover,
+.hsa-tab.hsa-active {
+  width: 650px;
+}
+.hsa-tab:hover .hsa-tab-image,
+.hsa-tab.hsa-active .hsa-tab-image {
+  /* Recolor image */
+  -webkit-filter: none;
+  filter: none;
+  /* Reposition image */
+  background-position: center center;
+  -webkit-transition: all 0.6s 0.1s ease-in-out;
+  -moz-transition: all 0.6s 0.1s ease-in-out;
+  -ms-transition: all 0.6s 0.1s ease-in-out;
+  -o-transition: all 0.6s 0.1s ease-in-out;
+  transition: all 0.6s 0.1s ease-in-out;
+}
+.hsa-tab .hsa-tab-image {
+  display: block;
+  float: left;
+  height: 400px;
+  z-index: 1;
+  width: 250px;
+  background-size: cover;
+  background-position: -160px center;
+  background-repeat: no-repeat;
+  /* Greyscale preview image */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+  -webkit-transition: all 0.6s 0.1s ease-in-out;
+  -moz-transition: all 0.6s 0.1s ease-in-out;
+  -ms-transition: all 0.6s 0.1s ease-in-out;
+  -o-transition: all 0.6s 0.1s ease-in-out;
+  transition: all 0.6s 0.1s ease-in-out;
+  border: 1px solid #ffffff;
+  text-align: left;
+}
+.hsa-tab .hsa-tab-image a {
+  display: block;
+  position: relative;
+  bottom: -400px;
+  left: 0;
+  width: 400px;
+  height: 250px;
+  z-index: 2;
+  padding: 20px;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.hsa-tab .hsa-tab-image a,
+.hsa-tab .hsa-tab-image a:link,
+.hsa-tab .hsa-tab-image a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.hsa-tab .hsa-tab-image a:active,
+.hsa-tab .hsa-tab-image a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.hsa-tab .hsa-tab-content {
+  position: absolute;
+  width: 400px;
+  margin-left: 250px;
+  padding: 20px;
+  z-index: 10;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: #fafaf0;
+  text-align: left;
+}
+/*# sourceMappingURL=hsaccordion.min.css.map */
