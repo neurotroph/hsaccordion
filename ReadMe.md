@@ -3,6 +3,8 @@ Lightweight CSS a horizontally stacked accordion HTML. Mainly built with HTML an
 
 jQuery only optional for auto-play.
 
+More Information and Demo: http://neurotroph.github.io/hsaccordion/
+
 ## Usage
 ### HTML
 The accordion is based on an ```<ul>```-element. You have to use the pre-defined CSS-classes in order to have the accordion working:
@@ -94,6 +96,7 @@ as long as you credit the original author and reference this GitHub repository.
 
 ## ToDo's
 * LESS-less version with themeing in separate CSS file
+* Make it responsible
 
 If you encounter any bugs, please create an issue, make a fork or create a pull request.
 
